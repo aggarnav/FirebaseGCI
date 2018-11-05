@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+    <title>GCI  EXAMPLE</title>
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  </head>
+
+  <body>
+        
+        
+    <div class="section no-pad-bot" id="index-banner">
+            <div id="in" class="row center">
+                <div hidden id="pic"></div>
+                <div hidden id="nome"></div>
+                <a id="login-button" class="btn-large waves-effect waves-light blue">
+                    <i class="material-icons left">
+                        account_circle
+                    </i>
+                    LOG-IN
+                </a>
+            </div>
+            <div hidden id="out" class="row center">
+                <a id="logout-button" class="btn-large waves-effect waves-light red">
+                    LOG-OUT
+                </a>
+            </div>
+            
+            <div class ="row center" style ="margin-left: 40%;margin-right: 40%">
+                    <ul id="myout"class="collection with-header">
+                            <li id="teste" class="collection-header"><h4>COUNTRIES</h4></li>
+							<li id="cList"></li>
+                            </ul>
+            </div>
+            <div class="row center">
+                <div class="input-field" style="margin-left: 40%;margin-right: 40%">
+                    <input id="country_in" type="text" class="validate" >
+                    <label for="country_in">type a country</label>
+                </div>
+            <div class="row center">
+                <a id="send-button" class="btn-large waves-effect waves-light orange">Save</a>
+            </div>
+        
+            </div>
+    </div>    
+
+    
+<script src="https://www.gstatic.com/firebasejs/5.5.6/firebase.js"></script>
+<script src="https://www.gstatic.com/firebasejs/5.5.6/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/5.5.6/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/5.5.6/firebase-database.js"></script>
+<script src="/__/firebase/init.js"></script>
+
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyDeJI5go9oH5yBfttxDmVHKwu4VlT1ZIY0",
+    authDomain: "code-in-38575.firebaseapp.com",
+    databaseURL: "https://code-in-38575.firebaseio.com",
+    projectId: "code-in-38575",
+    storageBucket: "code-in-38575.appspot.com",
+    messagingSenderId: "267300754589"
+  };
+  firebase.initializeApp(config);
+  defaultStorage = firebase.storage();
+  defaultDatabase = firebase.database();
+</script>
+<script type="text/javascript" src="js/materialize.min.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
+  </body>
+</html>
+      
